@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark - Favori Dizim</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <h2>Dark</h2>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link">Ana Sayfa</a></li>
+          <li><a href="#characters" class="nav-link">Karakterler</a></li>
+          <li><a href="#episodes" class="nav-link">Bölümler</a></li>
+          <li><a href="#favorite-scene" class="nav-link">Favori Sahne</a></li>
+          <li><a href="#about" class="nav-link">Hakkında</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">Dark</h1>
+          <p class="hero-subtitle">Zamanın döngüsünde kaybolmuş bir kasaba</p>
+          <p class="hero-description">
+            Winden kasabasında bir çocuğun kaybolması ile başlayan olaylar,
+            zamanı aşan karmaşık bir hikayeye dönüşür. Geçmiş, şimdi ve gelecek
+            arasındaki bağlantılar ortaya çıkarken, dört ailenin kaderi
+            birbirine gizemli şekilde bağlanır.
+          </p>
+          <button class="favorite-btn" id="favorite-btn">
+            <i class="fas fa-heart"></i> Favorilere Ekle
+          </button>
+        </div>
+        <div class="hero-image">
+          <img src="./images/dark.webp" alt="Dark Poster" />
+        </div>
+      </div>
+    </section>
+
+    <section id="characters" class="characters">
+      <div class="container">
+        <h2 class="section-title">Ana Karakterler</h2>
+        <div class="characters-grid">
+          <div class="character-card">
+            <div class="character-image">
+              <img src="./images/jonas.webp" alt="Jonas Kahnwald" />
+            </div>
+            <div class="character-info">
+              <h3>Jonas Kahnwald</h3>
+              <p class="character-role">Zaman Yolcusu</p>
+              <p class="character-description">
+                Babasının intiharının ardından zorlu günler geçiren Jonas,
+                Winden'deki gizemli olayların merkezinde kendini bulur ve
+                zamanın döngüsünü kırmaya çalışır.
+              </p>
+            </div>
+          </div>
+
+          <div class="character-card">
+            <div class="character-image">
+              <img src="./images/ulrich.webp" alt="Ulrich Nielsen" />
+            </div>
+            <div class="character-info">
+              <h3>Ulrich Nielsen</h3>
+              <p class="character-role">Polis Memuru</p>
+              <p class="character-description">
+                Winden polisinde çalışan Ulrich, oğlu Mikkel'in kaybolması
+                sonrası geçmişle yüzleşmek zorunda kalır ve kendi çocukluğundaki
+                trajediyi hatırlar.
+              </p>
+            </div>
+          </div>
+
+          <div class="character-card">
+            <div class="character-image">
+              <img src="./images/martha.webp" alt="Martha Nielsen" />
+            </div>
+            <div class="character-info">
+              <h3>Martha Nielsen</h3>
+              <p class="character-role">Paralel Dünya</p>
+              <p class="character-description">
+                Ulrich'in kızı Martha, Jonas'ın hayatında önemli bir yere
+                sahiptir. Paralel dünyalarda farklı versiyonları bulunur ve
+                hikayenin anahtarı konumundadır.
+              </p>
+            </div>
+          </div>
+
+          <div class="character-card">
+            <div class="character-image">
+              <img src="./images/charlotte.webp" alt="Charlotte Doppler" />
+            </div>
+            <div class="character-info">
+              <h3>Charlotte Doppler</h3>
+              <p class="character-role">Polis Şefi</p>
+              <p class="character-description">
+                Winden'in polis şefi olan Charlotte, gizemli olayları çözmeye
+                çalışırken kendi ailesinin karanlık sırlarıyla karşılaşır. Zaman
+                döngüsünün merkezindeki anahtar figürlerden biridir.
+              </p>
+            </div>
+          </div>
+
+          <div class="character-card">
+            <div class="character-image">
+              <img src="./images/mikkel.webp" alt="Mikkel Nielsen" />
+            </div>
+            <div class="character-info">
+              <h3>Mikkel Nielsen</h3>
+              <p class="character-role">Kayıp Çocuk</p>
+              <p class="character-description">
+                Ulrich'in en küçük oğlu Mikkel'in kaybolması, Winden'deki tüm
+                olayları tetikler. Zamanda yolculuk ederek geçmişe giden Mikkel,
+                Michael Kahnwald olarak yaşamını sürdürür.
+              </p>
+            </div>
+          </div>
+
+          <div class="character-card">
+            <div class="character-image">
+              <img src="./images/noah.webp" alt="Noah" />
+            </div>
+            <div class="character-info">
+              <h3>Noah</h3>
+              <p class="character-role">Gizemli Papaz</p>
+              <p class="character-description">
+                Gerçek kimliği Hanno Tauber olan Noah, Sic Mundus'un üyesi
+                olarak zaman döngüsünü sürdürmeye çalışır. Çocukları zaman
+                makineleriyle deneyimler yapar ve karanlık planların parçasıdır.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="episodes" class="episodes">
+      <div class="container">
+        <h2 class="section-title">Unutulmaz Bölümler</h2>
+        <div class="episodes-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Sezon</th>
+                <th>Bölüm</th>
+                <th>Başlık</th>
+                <th>Açıklama</th>
+                <th>IMDB</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>Gizem</td>
+                <td>
+                  Mikkel'in kaybolması ile başlayan zaman yolculuğu hikayesi
+                </td>
+                <td>8.7</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>8</td>
+                <td>Ne Olursa Olsun</td>
+                <td>
+                  Jonas'ın geçmişe yapılan yolculukta karşılaştığı acı gerçekler
+                </td>
+                <td>8.9</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>6</td>
+                <td>Çok Uzun Bir Gece</td>
+                <td>
+                  Paralel dünyaların varlığının ortaya çıktığı dönüm noktası
+                </td>
+                <td>9.2</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>8</td>
+                <td>Sonlar ve Başlangıçlar</td>
+                <td>İkinci sezonun apocalyptic finali</td>
+                <td>9.4</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>7</td>
+                <td>Arasında</td>
+                <td>Martha ve Jonas'ın paralel dünyalardaki dansı</td>
+                <td>9.3</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>8</td>
+                <td>Paradoks</td>
+                <td>
+                  Döngüyü kırmak için verilen son mücadele ve hikayenin sonu
+                </td>
+                <td>9.5</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="favorite-scene" class="favorite-scene">
+      <div class="container">
+        <h2 class="section-title">Favori Sahnem</h2>
+        <div class="scene-content">
+          <div class="scene-text">
+            <h3>"Sic Mundus Creatus Est"</h3>
+            <p>
+              Dark'ın en etkileyici sahnelerinden biri, gizli topluluğun "Sic
+              Mundus Creatus Est" (Böyle Dünya Yaratıldı) mottosu etrafında
+              şekillenen ritüelleridir. Bu sahne, zaman döngüsünün nasıl
+              sürdürüldüğünü ve karakterlerin kaderlerinin nasıl birbirine
+              bağlandığını gösterir.
+            </p>
+            <p>
+              "Soru nerede ve ne zaman değil. Soru kim? Geçmiş zamanla bağlıdır.
+              Gelecek ile de öyle. Her şey bağlantılı."
+            </p>
+          </div>
+          <div class="scene-video">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/rrwycJ08PSA"
+                title="Dark - Sic Mundus Creatus Est"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">Hakkında</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Buğrahan Yünt</h3>
+            <p class="about-role">Full-Stack Software Engineer</p>
+            <p>
+              Merhaba! Ben Buğrahan Yünt, Cumhuriyet Üniversitesi Bilgisayar
+              Mühendisliği son sınıf öğrencisi ve profesyonel bir Full-Stack
+              Software Engineer'ım.
+            </p>
+            <p>
+              TypeScript, React.js, Next.js, Node.js ve Go gibi modern
+              teknolojilerle çalışarak, responsive ve erişilebilir kullanıcı
+              arayüzleri tasarlıyorum.
+            </p>
+            <p>
+              AI destekli uygulamalar, Chrome extension'ları ve MCP server
+              geliştirme gibi konularda deneyim sahibiyim. Kodlamada clean
+              architecture ve best practices'i uygulayarak kaliteli çözümler
+              üretmeyi hedefliyorum.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://github.com/mryunt02"
+                target="_blank"
+                class="social-link"
+                ><i class="fab fa-github"></i> GitHub</a
+              >
+              <a
+                href="https://www.linkedin.com/in/byunt"
+                target="_blank"
+                class="social-link"
+                ><i class="fab fa-linkedin"></i> LinkedIn</a
+              >
+              <a
+                href="https://mryunt-2.vercel.app/"
+                target="_blank"
+                class="social-link"
+                ><i class="fas fa-globe"></i> Portfolio</a
+              >
+            </div>
+          </div>
+          <div class="about-image">
+            <img
+              src="https://avatars.githubusercontent.com/u/90159617?s=400&u=b3614335b2ffaea6a63967aa4e74098d7a87e9b6&v=4"
+              alt="Web Development"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Dark Fan Site. Bu site eğitim amaçlı oluşturulmuştur.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
