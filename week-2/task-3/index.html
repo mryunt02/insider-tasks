@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geri Sayım Aracı</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 20px;
+        text-align: center;
+        background-color: #f5f5f5;
+      }
+
+      .container {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        color: #333;
+        margin-bottom: 30px;
+      }
+
+      .input-section {
+        margin-bottom: 30px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #555;
+      }
+
+      input[type="number"] {
+        width: 100px;
+        padding: 10px;
+        font-size: 18px;
+        text-align: center;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+
+      .timer-display {
+        font-size: 48px;
+        font-weight: bold;
+        color: #333;
+        margin: 30px 0;
+        font-family: "Courier New", monospace;
+      }
+
+      .timer-display.running {
+        color: #007bff;
+      }
+
+      .timer-display.finished {
+        color: #dc3545;
+      }
+
+      .buttons {
+        margin-top: 20px;
+      }
+
+      button {
+        padding: 12px 24px;
+        margin: 0 5px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .start-btn {
+        background-color: #28a745;
+        color: white;
+      }
+
+      .start-btn:hover {
+        background-color: #218838;
+      }
+
+      .start-btn:disabled {
+        background-color: #6c757d;
+        cursor: not-allowed;
+      }
+
+      .reset-btn {
+        background-color: #dc3545;
+        color: white;
+      }
+
+      .reset-btn:hover {
+        background-color: #c82333;
+      }
+
+      .message {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #dc3545;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Geri Sayım Aracı</h1>
+
+      <div class="input-section">
+        <label for="timeInput"
+          >Geri sayım süresini belirleyebilsin (örn. 10 saniye gibi):</label
+        >
+        <input
+          type="number"
+          id="timeInput"
+          min="1"
+          max="3600"
+          value="10"
+          placeholder="Saniye"
+        />
+      </div>
+
+      <div class="timer-display" id="timerDisplay">
+        <p id="countdown">0</p>
+      </div>
+
+      <div class="buttons">
+        <button class="start-btn" id="startBtn">Başlat</button>
+        <button class="reset-btn" id="resetBtn">Sıfırla</button>
+      </div>
+
+      <div class="message" id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
