@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerçek Zamanlı Görev Yönetimi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1><i class="fas fa-tasks"></i> Görev Yönetimi</h1>
+        <p>Görevlerinizi düzenleyin ve takip edin</p>
+      </header>
+
+      <section class="task-form-section">
+        <h2>Yeni Görev Ekle</h2>
+        <form id="taskForm" class="task-form">
+          <div class="form-group">
+            <label for="taskTitle">Görev Başlığı *</label>
+            <input
+              type="text"
+              id="taskTitle"
+              name="taskTitle"
+              placeholder="Görev başlığını girin..."
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="taskDescription">Açıklama</label>
+            <textarea
+              id="taskDescription"
+              name="taskDescription"
+              placeholder="Görev açıklaması (opsiyonel)"
+              rows="3"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>Öncelik *</label>
+            <div class="priority-options">
+              <label class="radio-label">
+                <input type="radio" name="priority" value="low" />
+                <span class="priority-badge low">Düşük</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="priority" value="medium" />
+                <span class="priority-badge medium">Orta</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="priority" value="high" />
+                <span class="priority-badge high">Yüksek</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-plus"></i> Görev Ekle
+            </button>
+          </div>
+        </form>
+
+        <!-- Hata Mesajları -->
+        <div
+          id="errorMessage"
+          class="error-message"
+          style="display: none"
+        ></div>
+      </section>
+
+      <section class="controls-section">
+        <div class="controls">
+          <div class="filter-controls">
+            <button id="showAll" class="btn btn-secondary active">Tümü</button>
+            <button id="showCompleted" class="btn btn-secondary">
+              Tamamlananlar
+            </button>
+            <button id="showPending" class="btn btn-secondary">
+              Bekleyenler
+            </button>
+          </div>
+
+          <div class="sort-controls">
+            <select id="sortBy" class="sort-select">
+              <option value="date">Tarihe Göre</option>
+              <option value="priority">Önceliğe Göre</option>
+              <option value="title">Başlığa Göre</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <section class="task-list-section">
+        <div class="task-list-header">
+          <h2>Görevler</h2>
+          <span id="taskCount" class="task-count">0 görev</span>
+        </div>
+
+        <div id="taskList" class="task-list">
+          <div class="empty-state">
+            <i class="fas fa-clipboard-list"></i>
+            <h3>Henüz görev yok</h3>
+            <p>Yukarıdaki formu kullanarak ilk görevinizi ekleyin</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
