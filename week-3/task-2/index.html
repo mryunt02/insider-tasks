@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinite Scroll Posts</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Posts Feed</h1>
+      </header>
+
+      <main>
+        <div id="postContainer"></div>
+
+        <div id="loadingIndicator" class="loading-indicator hidden">
+          <div class="spinner"></div>
+          <p>Loading posts...</p>
+        </div>
+
+        <div id="errorMessage" class="error-message hidden">
+          <p>Failed to load posts. Please try again.</p>
+          <button id="retryButton">Retry</button>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
