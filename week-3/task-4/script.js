@@ -235,6 +235,7 @@
                     font-weight: bold;
                     margin-bottom: 10px;
                     color: #333;
+                    display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;
                 }
 
                 .carousel-price {
